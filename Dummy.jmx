@@ -31,24 +31,24 @@
           <elementProp name="Login_No_Of_User" elementType="Argument">
             <stringProp name="Argument.name">Login_No_Of_User</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.desc">Login can have more users</stringProp>
           </elementProp>
           <elementProp name="AddCustomer_No_Of_User" elementType="Argument">
             <stringProp name="Argument.name">AddCustomer_No_Of_User</stringProp>
-            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.desc">Add Customer should be equal or less than Login</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="DeleteCustomer_No_Of_User" elementType="Argument">
             <stringProp name="Argument.name">DeleteCustomer_No_Of_User</stringProp>
-            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.desc">Delete Customer should be equal or less than Add Customer</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="LogOut_No_Of_User" elementType="Argument">
             <stringProp name="Argument.name">LogOut_No_Of_User</stringProp>
-            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">LogOut should be equal or less than Login</stringProp>
           </elementProp>
@@ -159,7 +159,7 @@
         <hashTree/>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="DataSetup" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">true</boolProp>
+          <boolProp name="TransactionController.parent">false</boolProp>
         </TransactionController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home page" enabled="true">
@@ -426,16 +426,6 @@ if (sessionId == null || sessionId.isEmpty()) {
                 </elementProp>
               </collectionProp>
             </HeaderManager>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
-              <collectionProp name="Asserion.test_strings">
-                <stringProp name="1908144159">mngr612192</stringProp>
-              </collectionProp>
-              <stringProp name="Assertion.custom_message"></stringProp>
-              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-              <boolProp name="Assertion.assume_success">false</boolProp>
-              <intProp name="Assertion.test_type">2</intProp>
-            </ResponseAssertion>
             <hashTree/>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Get Username" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
