@@ -31,9 +31,3 @@ jobs:
       - name: Generate HTML Report
         run: |
           jmeter -g "output/results.jtl" -o "output/report"
-
-      - name: Upload Report as Artifact
-        uses: actions/upload-artifact@v2.3.1
-        with:
-          name: jmeter-html-report
-          path: output/report
