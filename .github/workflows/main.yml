@@ -27,5 +27,5 @@ jobs:
       - name: Run JMeter Test
         run: |
           mkdir -p output
-          jmeter -n -t Jmter/Dummy.jmx -l output/results.jtl
+          jmeter -n -t Dummy.jmx -l output/results.jtl
 
