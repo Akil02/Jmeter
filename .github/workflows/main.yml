@@ -29,4 +29,10 @@ jobs:
           mkdir -p output
           jmeter -n -t Dummy.jmx -l output/results.jtl
 
+      - name: Upload JMeter results
+        uses: actions/upload-artifact@v3
+        with:
+          name: jmeter-results
+          path: output/results.jtl
+
 
