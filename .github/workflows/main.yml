@@ -44,5 +44,3 @@ jobs:
         with:
           name: jmeter-html-report
           path: output/html-report
-
-
