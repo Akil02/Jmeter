@@ -35,4 +35,14 @@ jobs:
           name: jmeter-results
           path: output/results.jtl
 
+      - name: Generate HTML Report
+        run: |
+          jmeter -g output/results.jtl -o output/html-report
+
+      - name: Upload JMeter HTML Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: jmeter-html-report
+          path: output/html-report
+
 
